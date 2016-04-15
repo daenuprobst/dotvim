@@ -27,11 +27,23 @@ git commit -m "Added the fugitive plugin."
 Upgrade the plugins
 -------------------
 To upgrade all the plugins in the bundles folder:
+
 ```
 cd ~/.vim
 git submodule foreach git pull origin master
 ```
 
+YouCompleteMe
+-------------
+In order to get the autocomplete working, do the following:
+
+```
+cd ~/.vim/bundles/youcompleteme
+git submodule update --init --recursive
+./install.sh --clang-completer --tern-completer (clang for c-like support requires clang, tern for js support requires nodejs and npm)
+```
+
 Thanks
 ------
 Artem Dudarev
+vimcasts.org
