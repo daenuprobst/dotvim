@@ -38,7 +38,7 @@ YouCompleteMe
 In order to get the autocomplete working, do the following:
 
 ```
-cd ~/.vim/bundles/youcompleteme
+cd ~/.vim/bundle/youcompleteme
 git submodule update --init --recursive
 ./install.sh --clang-completer --tern-completer (clang for c-like support requires clang, tern for js support requires nodejs and npm)
 ```
